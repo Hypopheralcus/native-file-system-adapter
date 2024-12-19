@@ -47,7 +47,11 @@ async function showOpenFilePicker (options = {}) {
       input.addEventListener('cancel', reject, { once: true })
       input.click()
     })
-  } finally {
+  }
+  catch(e){
+    console.log(e)
+  }
+  finally {
     input.remove()
   }
 

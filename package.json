@@ -1,6 +1,6 @@
 {
   "name": "native-file-system-adapter",
-  "version": "3.0.1",
+  "version": "3.0.1-fix-2",
   "description": "Native File System API",
   "main": "src/es6.js",
   "module": "./src/es6.js",
@@ -14,7 +14,7 @@
     "test:node": "node test/test-node.js",
     "test:deno": "deno run --allow-read --allow-write --allow-net test/test-deno.js",
     "test:wpt-in-deno": "deno run --allow-read --allow-write --allow-net test/test-wpt-in-deno.js",
-    "build": "rm -rf dist && rollup -c rollup.config.js",
+    "build": "rollup -c rollup.config.js",
     "_prepublishOnly": "rm -rf types && tsc -p jsconfig.json"
   },
   "repository": {
